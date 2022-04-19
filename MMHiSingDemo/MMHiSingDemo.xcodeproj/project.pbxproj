@@ -14,6 +14,7 @@
 		5E76BF46280E8EAD009C8E90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E76BF45280E8EAD009C8E90 /* Assets.xcassets */; };
 		5E76BF49280E8EAD009C8E90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E76BF47280E8EAD009C8E90 /* LaunchScreen.storyboard */; };
 		5E76BF4C280E8EAD009C8E90 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E76BF4B280E8EAD009C8E90 /* main.m */; };
+		E0C4B6AAF4D7D73C726F1070 /* Pods_MMHiSingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F73E0D4D57A1DFAE142E40 /* Pods_MMHiSingDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46B468FEF53E096E3FD9882D /* Pods-MMHiSingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMHiSingDemo.release.xcconfig"; path = "Target Support Files/Pods-MMHiSingDemo/Pods-MMHiSingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5E76BF36280E8EAC009C8E90 /* MMHiSingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMHiSingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E76BF39280E8EAC009C8E90 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E76BF3A280E8EAC009C8E90 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		5E76BF4B280E8EAD009C8E90 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E76BF51280E8EAE009C8E90 /* MMHiSingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMHiSingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E76BF5B280E8EAE009C8E90 /* MMHiSingDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMHiSingDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F73E0D4D57A1DFAE142E40 /* Pods_MMHiSingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMHiSingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0EE5B0B397D5D6F1FE9FD1 /* Pods-MMHiSingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMHiSingDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMHiSingDemo/Pods-MMHiSingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C4B6AAF4D7D73C726F1070 /* Pods_MMHiSingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,8 @@
 			children = (
 				5E76BF38280E8EAC009C8E90 /* MMHiSingDemo */,
 				5E76BF37280E8EAC009C8E90 /* Products */,
+				B23213E167FE2266AA336CF3 /* Pods */,
+				B780C53B918C443278E03FD2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,24 @@
 			path = MMHiSingDemo;
 			sourceTree = "<group>";
 		};
+		B23213E167FE2266AA336CF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA0EE5B0B397D5D6F1FE9FD1 /* Pods-MMHiSingDemo.debug.xcconfig */,
+				46B468FEF53E096E3FD9882D /* Pods-MMHiSingDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B780C53B918C443278E03FD2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F73E0D4D57A1DFAE142E40 /* Pods_MMHiSingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +143,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E76BF65280E8EAE009C8E90 /* Build configuration list for PBXNativeTarget "MMHiSingDemo" */;
 			buildPhases = (
+				7F0C9F5A4BF4230F88B69922 /* [CP] Check Pods Manifest.lock */,
 				5E76BF32280E8EAC009C8E90 /* Sources */,
 				5E76BF33280E8EAC009C8E90 /* Frameworks */,
 				5E76BF34280E8EAC009C8E90 /* Resources */,
+				6158B9189F4CC614EF660E3B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +262,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6158B9189F4CC614EF660E3B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMHiSingDemo/Pods-MMHiSingDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MMHiSingDemo/Pods-MMHiSingDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MMHiSingDemo/Pods-MMHiSingDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F0C9F5A4BF4230F88B69922 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MMHiSingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E76BF32280E8EAC009C8E90 /* Sources */ = {
@@ -411,6 +480,7 @@
 		};
 		5E76BF66280E8EAE009C8E90 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0EE5B0B397D5D6F1FE9FD1 /* Pods-MMHiSingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +508,7 @@
 		};
 		5E76BF67280E8EAE009C8E90 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46B468FEF53E096E3FD9882D /* Pods-MMHiSingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
