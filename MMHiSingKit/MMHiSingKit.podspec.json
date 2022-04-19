@@ -1,0 +1,26 @@
+{
+  "name": "MMHiSingKit",
+  "version": "0.0.1",
+  "summary": "A short description of MMHiSingKit.",
+  "description": "A short description of MMHiSingKit.",
+  "homepage": "https://cosmos.wemomo.com/MMHiSingKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yanbo_momo": "yanbo@immomo.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+      "http": "https://cosmos.wemomo.com/MMHiSingKit"
+  },
+  "vendored_frameworks": "Frameworks/Libs/*.framework",
+  "resources": "Frameworks/**/*.bundle",
+  "dependencies": {
+    "SVGAPlayer": [],
+    "SDWebImage": []
+  }
+}
